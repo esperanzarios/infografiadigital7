@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <title>Marcha 8M: El debate generado sobre las cifras calculadas de asistentes</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+        <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@500;600&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet" />
+        <style>
+            body {
+                font-family: "Roboto", sans-serif;
+                font-weight: 300;
+            }
+            h1 {
+                font-family: "Bitter", serif;
+                font-weight: 600;
+                font-size: 2.5rem;
+            }
+            @media (min-width: 992px) { 
+                h1{
+                    font-size:3.3rem;                     
+                }
+            }            
+            h2 {
+                font-weight: 700;
+                font-size: 1rem;
+                color: #999;
+                text-transform: uppercase;
+            }
+            h6 {
+                text-transform: uppercase;
+                font-weight: 700;
+                font-size: 0.8rem;
+                color: #0f4c81;
+            }
+            h6 span {
+                font-weight: 300;
+                color: #999;
+            }
+            p.lead {
+                font-family: "Bitter", serif;
+                font-weight: 500;
+                color: #888;
+            }
+            @media (max-width: 992px) {
+                p.lead {
+                    text-align: center;
+                }
+            }
+            /* la siguiente clase se quita (removeClass) o agrega (addClass) con jQuery */
+            .esconder {
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-11 col-sm-10 col-md-8 col-lg-7">
+                    <h2 class="text-center pt-3">MARCHA FEMINISTA DEL 8M</h2>
+                    <h1 class="text-center py-3">El debate generado sobre las cifras calculadas de asistentes a la marcha</h1>
+                    <h6 class="text-center py-3">POR NOMBRE APELLIDO <span class="ml-3 d-none d-lg-inline">Lunes 28 de septiembre, 2020</span></h6>
+                </div>
+                <div class="col-12 col-sm-10 col-md-8 col-lg-6">
+                    <p class="lead">Durante la convocatoria de la Marcha Feminista del 8M, se produjo una polémica sobre las cifras calculadas por carabineros, quienes calculaban 150 mil asistentes, mientras que coordinadoras calculas 2 millones de asistentes</p>
+                </div>
+                <div class="col-12 my-3">
+                    <figure class="alert-primary shadow-sm">
+                        <svg x="0px" y="0px" viewBox="0 0 500 200" class="d-none d-md-block">
+                            <text x="250" y="100" text-anchor="middle" font-size="20">DESDE MD</text>
+                            <g id="primerGrupoGrande" class="esconder">
+                                <text x="250" y="120" text-anchor="middle" font-size="10">yo estoy en el primerGrupoGrande</text>
+                            </g>
+                            <g id="segundoGrupoGrande" class="esconder">
+                                <text x="250" y="120" text-anchor="middle" fill="#0F4C81" font-size="10">yo estoy en el segundoGrupoGrande</text>
+                            </g>
+                        </svg>
+                        <svg x="0px" y="0px" viewBox="0 0 500 500" class="d-md-none">
+                            <text x="250" y="250" text-anchor="middle" font-size="30">HASTA MD</text>
+                            <g id="primerGrupoChico" class="esconder">
+                                <text x="250" y="300" text-anchor="middle" font-size="20">yo estoy en el primerGrupoChico</text>
+                            </g>
+                            <g id="segundoGrupoChico" class="esconder">
+                                <text x="250" y="300" text-anchor="middle" fill="#0F4C81" font-size="20">yo estoy en el segundoGrupoChico</text>
+                            </g>
+                        </svg>
+                    </figure>
+                </div>
+                <div class="col-12 col-sm-10 col-md-8 col-lg-6">
+                    <p>El domingo 8 de marzo se convocó la marcha Feminista, esta convocatoria comenzaba a las 12:00 horas. Según la Coordinadora Feminista 8M se valora la cantidad de manifestantes en 2 millones. A las 13 horas, carabineros informa que la cifra de manifestantes ronda entre 110 mil personas. A las 2:00 pm carabineros informa mediante twitter sobre las cifras; “Se informa que, al momento, la cantidad proyectada de asistentes en la marcha del Día Internacional de la Mujer es de 125 mil personas.” Ya a las 18 horas actualiza sus cifras y quedan en 150 mil.
+                    </p>
+                    <p> Carabineros argumenta que el método utilizado era mediante un algoritmo que calcula la densidad de personas en una superficie dada que entrega resultados de 2,3 personas por metro cuadrado. Mientras que las coordinadoras argumentan que se posicionaban 7 personas por metro cuadrado, con estos cálculos, la cantidad de manifestantes sería de 1.946.000 millones. Por otro lado, matemáticos expresan que si bien 2 millones es una cifra muy alta, 150 es muy poco, argumentan que los cálculos se deben generar mediante la densidad, y esta no es uniforme, puesto que varía dependiendo de la zona en donde se encuentre: si nos posicionamos en el área central de la marcha la densidad será alta por metro cuadrado, mientras que si nos posicionamos en la periferia de la marcha la densidad bajará. </p>
+                </div>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(window).scroll(function () {
+                var scroll = $(window).scrollTop();
+                var total = $(window).height();
+                if (scroll >= total / 1.618) {
+                    $("#primerGrupoChico").addClass("esconder");
+                    $("#primerGrupoGrande").addClass("esconder");
+                    $("#segundoGrupoChico").removeClass("esconder");
+                    $("#segundoGrupoGrande").removeClass("esconder");
+                } else {
+                    $("#primerGrupoChico").removeClass("esconder");
+                    $("#primerGrupoGrande").removeClass("esconder");
+                    $("#segundoGrupoChico").addClass("esconder");
+                    $("#segundoGrupoGrande").addClass("esconder");
+                }
+            });
+        </script>
+    </body>
+</html>
